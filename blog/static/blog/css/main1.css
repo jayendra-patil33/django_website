@@ -81,12 +81,22 @@ h1{
 	font-size: 110%;
 	box-shadow: 0px 0px 10px 10px #ff0000 ;
 }
-
+.bd-navbar
+{
+	position: sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	margin-bottom: auto;
+}
 .navbar{
 		padding-top: 0.5rem;
     padding-right: 0rem;
     padding-bottom: 0.5rem;
-    padding-left: 0rem;
+	padding-left: 0rem;
+	align-items: flex-start;
+	width: 100%;
 }
 .navbar-nav{
 	display: flex;
@@ -162,20 +172,13 @@ h1{
 	overflow-x: auto;
 	margin-left: 0px;
 	margin-right: 0px;
-  /* white-space: nowrap; */
+  white-space: nowrap;
 }
-/*
-.testimonial-group > .row > .col-sm {
-  display: inline-block;
-  float: none;
-} */
 
+/* 
 section-title {
   width: 100%;
   overflow-x: scroll(or auto);
-}
+} */
 
-/*.bg-dark{
-	background-color: !important;
-}
-*/
+
