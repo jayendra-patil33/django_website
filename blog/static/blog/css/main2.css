@@ -1,58 +1,40 @@
 #header1 {
-    /* border: 1px solid transparent; */
-      /* margin-top: 0px; */
-      /* background: linear-gradient(40deg, #CCFFFF, #FFCCCC); */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url("../images/poster3.jpg");
-      /* padding bottom: auto; */
-      width: 100%;
-      height:auto;
-      
-      
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/poster3.jpg");
+  width: 100%;
+  height:auto;
   }
 
-  .navbar{
-    /*#F3F3F3;*/
-   border-color: #E7E7E7;
-       /* flex: 0 1 auto; */
-           /* z-index: 2; */
+.navbar{
+  border-color: #E7E7E7; 
 }
-/* .fixed-top
-{
-	position: sticky;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-} */
+
 
 .nav-link.customName{
-   font-family: 'Press Start 2P', cursive;
-   color:#e1e6df !important;
-   font-size: 100%;
-   /* background-color: black; */
-   margin: 0px 0.5rem;
+  font-family: 'Press Start 2P', cursive;
+  color:#e1e6df !important;
+  font-size: 100%;
+  margin: 0px 0.5rem;
 }
 
 .nav-link.customName:hover{
-	/*font-family: roboto;*/
 	color:black !important;
 	background-color: #e1e6df;
 	border-radius: 10px;
-	font-size: 110%;
+	font-size: 105%;
 	box-shadow: 0px 0px 10px 10px #ff0000 ;
 }
 .navbar{
-    position: sticky;
-	top: 0;
-	right: 0;
-	left: 0;
-	z-index: 1030;
-    padding-top: 0.5rem;
-    padding-right: 0rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0rem;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding-top: 0.5rem;
+  padding-right: 0rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0rem;
 }
 .navbar-nav{
 display: flex;
@@ -86,10 +68,4 @@ padding-left: 20px;
 	overflow-x: auto;
 	margin-left: 0px;
 	margin-right: 0px;
-  /* white-space: nowrap; */
 }
-/*
-.testimonial-group > .row > .col-sm {
-  display: inline-block;
-  float: none;
-} */
