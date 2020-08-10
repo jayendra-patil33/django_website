@@ -3,44 +3,39 @@ h1{
  }
 
 #header1 {
- /* border: 1px solid transparent; */
-   /* margin-top: 0px; */
-   /* background: linear-gradient(40deg, #CCFFFF, #FFCCCC); */
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-image: url("../images/poster3.jpg");
-   /* padding bottom: auto; */
-   width: 100%;
-   height:100vh;
-   display: flex;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../images/poster3.jpg");
+	width: 100%;
+}	
+
+.navbar{
+	position: sticky;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+	padding-top: 0.3rem;
+	padding-right: 0rem;
+	padding-bottom: 0.3rem;
+	padding-left: 0rem;
 }
 
-#header-inside{
-	min-height:88vh;
-	/* flex: 1 1 auto; */
+.navbar-nav{
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem; 
 }
 
-.navbar.scrolled {
-	background-color: #F3F3F3 !important ;
-	transition: background-color 200ms linear;
-  
+.nav-item-icon{
+	padding-right: 2rem;
 }
 
 .nav-link.customName{
 	font-family: 'Press Start 2P', cursive;
 	color:#e1e6df !important;
-	font-size: 100%;
-	/* background-color: black; */
+	font-size: 12px;
 	margin: 0px 0.5rem;
-}
-.nav-link.customName.scrolled{
-
-	color:black !important;
-	font-size: 100%;
-	/* background-color: black; */
-	margin: 0px 0.5rem;
-
-
 }
 
 .nav-link.customName:hover{
@@ -48,106 +43,38 @@ h1{
 	color:black !important;
 	background-color: #e1e6df;
 	border-radius: 10px;
-	font-size: 110%;
-	box-shadow: 0px 0px 10px 10px #ff0000 ;
-}
-.nav-link.customName.scrolled:hover{
-	/*font-family: roboto;*/
-	color:#e1e6df !important;
-	background-color: black;
-	border-radius: 10px;
-	font-size: 110%;
-	box-shadow: 0px 0px 10px 10px #ff0000 ;
-}
-
-.navbar {
-    background-color: #F3F3F3;
-    border-color: #E7E7E7;
-}
-
- /* .nav-item{
-	font-family: roboto;
-	text-decoration-color:#fcfcfc !important;
-	background-color: #b8190b;
-	border-radius: 25px;  
-
-} */
-
-.nav-item:hover{
-	/*font-family: roboto;*/
-	text-decoration-color:black;
-	 /* background-color: #e1e6df;  */
-	border-radius: 25px;  
-} */
-.navbar-nav{
-	display: flex;
-	justify-content: center;
-	padding-left: 20px;
+	font-size: 12.5px;
+	box-shadow: 0px 0px 2px 2px #ff0707 ;
 }
 
 .fa{
 	color:black;
-}
-.fa:hover{
-	color:red;
-}
-.nav-item-icon{
-	padding-left: 20px;
-
+	padding: 0 2px 0 2px;
 }
 
-section-title {
-	width: 100%;
-	overflow-x: scroll(or auto);
-  }
-
-#carouselExampleIndicators{
-	
-	max-width:1200px;;
-	height:500px ;
-	background-color:hsl(0, 100%, 70%);	
-	margin-left: 145px;
-	display: flex;
-	justify-content: center;
-	border-radius: 10px;
-
-
-}
-#carouselExampleIndicators.carousel-inner{
-	
-	background-color:hsl(1, 100%, 70%);	
-
-}
-.shadow {
-    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+.fa.fa-github:hover{
+	color:#979494;
 }
 
-
-.container-fluid{
-	background-color: #c9cbcce6	;
+.fa.fa-instagram:hover{
+	background: linear-gradient(45deg,#ebc334,#eb3434,#b01997 );
+	-webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.d-block{
-	max-width:888px;
-	height: 500px;
-	clip-path: polygon(6% 0, 100% 0, 100% 100%, 41% 100%);
-	position:absolute;
-	right: 0;
-	border-radius: 10px;
-	
+.fa.fa-facebook-square:hover{
+	color:#3b5998 ;
 }
 
-.nav-item-icon{
-	padding-left: 20px;
-
+.fa.fa-youtube-play:hover{
+	color:#FF0000;
 }
 
-.bg-dark{
-	background-color: #dc3545ed!important;
-}
 #sticky-footer{
 	width: 100%;
 }
+
 #footer-content{
 	background-color: #ee6e73;
 	width: 100%;
@@ -155,7 +82,11 @@ section-title {
 	flex-direction:column;
 }
 
-/*.bg-dark{
-	background-color: !important;
+.row{
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+  white-space: nowrap;
 }
-*/
+

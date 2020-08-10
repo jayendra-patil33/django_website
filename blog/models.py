@@ -12,3 +12,10 @@ class Blog(models.Model):
     type = models.CharField(max_length=10)
     def __str__(self):
         return self.type
+
+
+class Sponsors(models.Model):
+    title = models.CharField(max_length=100)
+    content =models.TextField()
+    image = models.ImageField(default='default.jpg', upload_to ='sponsors')
+    
