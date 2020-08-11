@@ -5,7 +5,7 @@ h1{
 #header1 {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url("../images/poster3.jpg");
+	background-image: url("../images/photo_2020-08-11_13-35-16.jpg");
 	width: 100%;
 }	
 
@@ -29,6 +29,7 @@ h1{
 
 .nav-item-icon{
 	padding-right: 2rem;
+	
 }
 
 .nav-link.customName{
@@ -53,7 +54,7 @@ h1{
 }
 
 .fa.fa-github:hover{
-	color:#979494;
+	color:#2f2f2f;
 }
 
 .fa.fa-instagram:hover{
@@ -87,6 +88,6 @@ h1{
 	overflow-x: auto;
 	margin-left: 0px;
 	margin-right: 0px;
-  white-space: nowrap;
+  	white-space: nowrap;
 }
 

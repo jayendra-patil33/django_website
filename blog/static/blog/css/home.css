@@ -12,9 +12,12 @@ h1{
 }
 
 .navbar{
-	margin-bottom: auto;
-	align-items: flex-start;
+	 margin-bottom: auto;
+	/* align-items: flex-start; */
 	width: 100%;
+	position: fixed;
+	top: 0;
+
 }
 
 .navbar-nav{
@@ -28,6 +31,7 @@ h1{
 .navbar.scrolled {
   background-color: #ffffff !important ;
   transition: background-color 200ms linear;
+  border-bottom: 3px solid red;
   
 }
 
@@ -45,12 +49,49 @@ h1{
 	
 	box-shadow: 0px 0px 2px 2px #ff0707 ;
 	font-size: 12.5px;
-  }  
+}
+
+
+.arrow{
+	  position: absolute;
+	  top: 85%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+  }
+.arrow span{
+	  display: block;
+	  width: 30px;
+	  height: 30px;
+	  border-bottom: 5px solid #f51b1b;
+	  border-right: 5px solid #f51b1b;
+	  transform: rotate(45deg);
+	  margin: -10px;
+	  animation: animate 2s infinite;
+  }
+.arrow span:nth-child(2){
+	  animation-delay: -0.2s;
+  }
+.arrow span:nth-child(3){
+	  animation-delay: -0.4s;
+  }
+@keyframes animate {
+	  0%{
+		  opacity: 0;
+		  transform: rotate(45deg) translate(-20px,-20px);
+	  }
+	  50%{
+		  opacity: 1;
+	  }
+	  100%{
+		  opacity: 0;
+		  transform: rotate(45deg) translate(20px,20px);
+	  }
+  }
 
 #carouselExampleIndicators{
 
 	max-width:1200px;
-	height:75vh ;
+	height:70vh ;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	display: flex;
@@ -76,4 +117,29 @@ h1{
 
 }
 
+.postcard-item{
+	width: 45vw;
+	height: auto;
+	margin:4rem auto ;
+	color: #e1e6df;
+	background-color: #02073b;
+	padding:4rem 8rem;
+	border-radius: 1rem;
+	font-size: 1.5rem;
+	box-shadow: 0 0 0.3rem 0.3rem #eff306;
+	/* clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 81% 85%, 86% 100%, 61% 85%, 0 85%); */
+
+
+}
+#videoBlock {
+	margin: 0px auto;
+	width: 500px;
+	height: 375px;
+	border: 10px #333 solid;
+}
+#videoElement {
+	width: 500px;
+	height: 375px;
+	background-color: #666;
+}
 

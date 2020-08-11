@@ -4,6 +4,14 @@
 <link rel="stylesheet" type="text/css" href="{% static 'blog/css/main.css' %}">
 <link rel="stylesheet" type="text/css" href="{% static 'blog/css/home.css' %}">
 {%endblock css%}
+{%block arrow%}
+<div class="arrow">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+
+{%endblock arrow%}
 {%block content%}	
 	</header>	
 	<div class="page-header head-filter clear-filter" id='header2'>
@@ -20,16 +28,31 @@
 					<img class="d-block w-100" src="{% static 'blog/images/car3.jpeg' %}" alt="Third slide">
 				</div>
 			</div>
-		
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-			</a>
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+				</a>
 		</div>
 		
+		<div class="container" id="postcard">
+			<div class="postcard-item">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cumque dolor fuga temporibus commodi veniam? Temporibus asperiores, dolore porro a ipsum iusto cupiditate et eveniet quaerat, tempore dolorum, doloribus placeat!
+			</div>
+			<div class="postcard-item">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus odit aut deserunt quia! Non fuga odio velit, voluptas dolores reiciendis. Non at, illo amet quod officiis eligendi sequi delectus molestiae.
+			</div>
+			<div class="postcard-item">
+
+			</div>
+		</div>
+		<div id="videoBlock">
+			<video autoplay="true" id="videoElement">
+			
+			</video>
+		</div>
 	</div>	 
 {%endblock content%}	
